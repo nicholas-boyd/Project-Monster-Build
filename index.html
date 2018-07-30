@@ -15,7 +15,9 @@
   <body>
     <h1>Project Monster</h1>
     <h2>Card-based RTS/RPG</h2>
-    <p>Use WASD to move. Change selected ability (the card with the orange outline) using the mouse scroll wheel, or Q/E. Activate abilities by either clicking anywhere (activates currently selected ability), or by clicking a specific card (activates the ability you clicked). The inventory screen can be toggled with the 'I' key during either the main menu, or battle states (won't be available in battle for much longer).</p>
+    <p>Use WASD to move. Change selected ability (the card with the orange outline) using the mouse scroll wheel, or Q/E. Activate abilities by either clicking anywhere (activates currently selected ability), or by clicking a specific card (activates the ability you clicked). The inventory screen can be toggled with the 'I' key during either the main menu, or battle states (won't be available in battle for much longer).<br>
+      When you run out of cards, or if you don't want to use any more from your hand, hold the 'R' key. This 'reloads' your hand. You can see the reload timer on top of the Deck of cards at the left. This timer increases the more cards you have in your hand, and will also increase if you no longer have enough cards in your deck and must 'reshuffle.'<br>
+      Enemy AI is meant to be smart, but overly conservative after being hit. Enemies will do all they can to get the player in their range, and attack them even to the point of attacking their allies in order to get a hit. When damaged, enemy units will stop moving to let their allies heal them. Right now, all undamaged enemies will also stop attacking, and attempt to heal their damaged ally. You may notice the AI stop inexplicably from time to time. This is their 'thinking' step, which most often occurs after they redraw their hand to look for a new move.</p>
     <div class="webgl-content">
       <div id="gameContainer" style="width: 960px; height: 600px"></div>
       <div class="footer">
