@@ -9,13 +9,15 @@
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Documents.json", {onProgress: UnityProgress});
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Project Monster Build.json", {onProgress: UnityProgress});
     </script>
   </head>
   <body>
     <h1>Project Monster</h1>
     <h2>Card-based RTS/RPG</h2>
     <p>Click to get through the initial menus, then once at the map screen click a room on the first floor from the bottom. Click some more to get through the conversation controller, then use WASD to move. <br>
+	  When you approach the battlefield your character will automatically walk to its starting tile, and several menus will open. Your Deck, Hand, and Discards are shown at the bottom along with your Mana. Health bars are at the upper right and left corners.<br>
+	  You can still use WASD to move. Your currently selected card is highlighted in green. Use the Mouse Scroll Wheel, or the Q and E keys to select different cards in your hand. Card activation is currently not built into the game, so all you can do from here is reload your hand. <br>
       You can hold the 'R' key to 'reload' your hand. When no cards are left in your Deck to draw from your discard pile will shuffle back into your deck pile, costing you time.<br>
     </p><br>
     <div class="webgl-content">
